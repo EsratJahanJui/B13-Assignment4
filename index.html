@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Job Application Tracker</title>
+    <!-- tailwind cdn -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- Css -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="body-color">
+    <header class="w-[80%] mx-auto">
+      <h1 class="text-2xl font-bold my-5">Job Application Tracker</h1>
+      <div class="grid grid-cols-3 gap-8">
+        <div class="bg-white rounded-lg border border-gray-200 p-4">
+          <p>Total</p>
+          <p id="total" class="font-bold text-xl">8</p>
+        </div>
+        <div class="bg-white rounded-lg border border-gray-200 p-4">
+          <p>Interview</p>
+          <p id="thrivingCount" class="text-green-500 font-bold text-xl">0</p>
+        </div>
+        <div class="bg-white rounded-lg border border-gray-200 p-4">
+          <p>Rejected</p>
+          <p id="struggingCount" class="text-red-500 font-bold text-xl">0</p>
+        </div>
+      </div>
+    </header>
+
+    <main class="w-[80%] mx-auto">
+      <hr class="my-6" />
+      <div class="flex justify-between">
+        <div>Available Jobs</div>
+        <div>8 Jobs</div>
+      </div>
+
+      <div class="py-3">
+        <button
+          class="bg-blue-600 rounded-lg text-white px-5 py-2"
+          id="all-filter-btn"
+        >
+          All
+        </button>
+        <buton
+          class="bg-white rounded-lg px-5 py-2 border border-gray-200"
+          id="interview-filter-btn"
+          >Interview</buton
+        >
+        <button
+          class="bg-white rounded-lg px-5 py-2 border border-gray-200"
+          id="rejected-filter-btn"
+        >
+          Rejected
+        </button>
+      </div>
+    </main>
+  </body>
+</html>
