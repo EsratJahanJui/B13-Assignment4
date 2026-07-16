@@ -71,9 +71,13 @@
         </div>
       </div>
 
-      <section class="main-card-section all-card-section">
-        <!-- card 1 -->
-        <div class="card1 bg-amber-300 rounded-md p-2">
+      <!-- all 3 section in one container -->
+       <div id="jobs-container">
+        <!-- job card section -->
+           <section id="all-container" class="hidden main-card-section all-card-section">
+       <div >
+         <!-- card 1 -->
+        <div id="" class="card1 bg-amber-300 rounded-md p-2">
           <div class="flex justify-between">
             <h1 class="font-semibold text-xl">Mobile First Corp</h1>
             <span class="bg-red-400 rounded-full p-2"
@@ -91,16 +95,21 @@
           <button class="border-2 rounded-md px-4">interview</button>
           <button class="border-2 rounded-md px-4">Rejected</button>
         </div>
-      </section>
+       </div>
+           </section>
 
       <!-- Interview section -->
-      <section class="interview-section">Interview Section</section>
+      <section id="interview-container" class="interview-section hidden">Interview Section</section>
 
       <!-- Reject section -->
-      <section class="reject-section">Reject Section</section>
+      <section id="reject-container" class="reject-section hidden">Reject Section</section>
+
+       </div>
+
+   
 
       <!-- empty section -->
-      <section class="empty-section">
+      <section class="empty-section hidden">
         <div class="bg-amber-300 grid place-items-center py-12 rounded-md">
           <img src="./img/jobs.png" alt="" class="h-16 w-16" />
           <h3>No jobs available</h3>
