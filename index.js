@@ -66,3 +66,27 @@ const rejectStat = document.getElementById("stat-reject");
 totalStat.innerText = allContainer.children.length;
 
  switchTab(currentTab);
+
+//  job cahnge through button click
+
+document.getElementById("jobs-container").addEventListener("click", function(event){
+  const clickedElement = event.target ;
+  const card = clickedElement.closest(".card")
+  const status = card.querySelector(".status");
+  const parent = card.parentNode;
+
+  // console.log(status);
+  if (clickedElement.classList.contains("interview")){
+    status.innerText = "interview";
+    interviewContainer.appendChild(card);
+  }
+   if (clickedElement.classList.contains("rejected")){
+    status.innerText = "rejected";
+
+       rejectContainer.appendChild(card);
+
+  } 
+  if (clickedElement.classList.contains("delete")){
+    parent.removeChild(card);
+  }
+})
