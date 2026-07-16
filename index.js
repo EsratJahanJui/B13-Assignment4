@@ -57,4 +57,12 @@
 
 
  };
+// stat update _____  total job count  
+const totalStat = document.getElementById("stat-total");
+const interviewStat = document.getElementById("stat-interview");
+const rejectStat = document.getElementById("stat-reject");
+
+//  console.log( totalStat, interviewStat, rejectStat);
+totalStat.innerText = allContainer.children.length;
+
  switchTab(currentTab);
