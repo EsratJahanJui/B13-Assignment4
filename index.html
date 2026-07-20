@@ -28,10 +28,12 @@
           Total <span class="text-blue-900 font-bold" id="stat-total">8</span>
         </div>
         <div class="flex flex-col">
-          Interview <span class="text-green-700 font-bold" id="stat-interview">0</span>
+          Interview
+          <span class="text-green-700 font-bold" id="stat-interview">0</span>
         </div>
         <div class="flex flex-col">
-          Rejected <span class="text-red-500 font-bold" id="stat-reject">0</span>
+          Rejected
+          <span class="text-red-500 font-bold" id="stat-reject">0</span>
         </div>
       </div>
     </header>
@@ -43,7 +45,7 @@
       <div class="top-section">
         <div class="flex justify-between px-2 py-4 text-left">
           <h1>Available Jobs</h1>
-          <span> <span id="available">8</span>  jobs</span>
+          <span> <span id="available">8</span> jobs</span>
         </div>
 
         <div class="button-div">
@@ -72,59 +74,199 @@
       </div>
 
       <!-- all 3 section in one container -->
-       <div id="jobs-container">
+      <div id="jobs-container">
         <!-- job card section -->
-           <section id="all-container" class="hidden main-card-section all-card-section space-y-4">
-              <!-- card 1 -->
-                  <div id="" class="card card1 bg-amber-300 rounded-md p-2">
-                    <div class="flex justify-between">
-                      <h1 class="font-semibold text-xl">Mobile First Corp</h1>
-                    <span class="delete bg-red-400 rounded-full p-2"
-                        ><i class="fa-regular fa-trash-can pointer-events-none"></i
-                      ></span>
-                    </div>
+        <section
+          id="all-container"
+          class="hidden main-card-section all-card-section space-y-8"
+        >
+          <!-- card 1 -->
+          <div id="" class="card card1 bg-amber-300 rounded-md p-2">
+            <div class="flex justify-between">
+              <h1 class="font-semibold text-xl">Mobile First Corp</h1>
+              <span class="delete bg-red-400 rounded-full p-2"
+                ><i class="fa-regular fa-trash-can pointer-events-none"></i
+              ></span>
+            </div>
 
-                    <p>React Native Developer</p>
-                    <p>Remote • Full-time • $130,000 - $175,000</p>
-                    <button class="border-2 rounded-md px-4 status">Not Applied</button>
-                    <p>
-                      Build cross-platform mobile applications using React Native. Work on
-                      products used by millions of users worldwide.
-                    </p>
-                    <button class=" interview border-2 rounded-md px-4">interview</button>
-                    <button class="rejected border-2 rounded-md px-4">Rejected</button>
-                  </div>
-                  <!-- card 2 -->
-                  <div id="" class="card card2 bg-amber-300 rounded-md p-2">
-                    <div class="flex justify-between">
-                      <h1 class="font-semibold text-xl">WebFlow Agency</h1>
-                      <span class="delete bg-red-400 rounded-full p-2"
-                        ><i class="fa-regular fa-trash-can pointer-events-none"></i
-                      ></span>
-                    </div>
+            <p>React Native Developer</p>
+            <p>Remote • Full-time • $130,000 - $175,000</p>
+            <button class="border-2 rounded-md px-4 status">Not Applied</button>
+            <p>
+              Build cross-platform mobile applications using React Native. Work
+              on products used by millions of users worldwide.
+            </p>
+            <button class="interview border-2 rounded-md px-4">
+              interview
+            </button>
+            <button class="rejected border-2 rounded-md px-4">Rejected</button>
+          </div>
+          <!-- card 2 -->
+          <div id="" class="card card2 bg-amber-300 rounded-md p-2">
+            <div class="flex justify-between">
+              <h1 class="font-semibold text-xl">WebFlow Agency</h1>
+              <span class="delete bg-red-400 rounded-full p-2"
+                ><i class="fa-regular fa-trash-can pointer-events-none"></i
+              ></span>
+            </div>
 
-                    <p>Web Designer & Developer</p>
-                    <p>Los Angeles, CA • Part-time • $80,000 - $120,000</p>
-                    <button class="border-2 rounded-md px-4 status">Not Applied</button>
-                    <p>
-                      Create stunning web experiences for high-profile clients. Must have portfolio and experience with modern web design trends.
-                    </p>
-                    <button class="interview border-2 rounded-md px-4">interview</button>
-                    <button class="rejected border-2 rounded-md px-4">Rejected</button>
-                  </div>
-                         
-       
-           </section>
+            <p>Web Designer & Developer</p>
+            <p>Los Angeles, CA • Part-time • $80,000 - $120,000</p>
+            <button class="border-2 rounded-md px-4 status">Not Applied</button>
+            <p>
+              Create stunning web experiences for high-profile clients. Must
+              have portfolio and experience with modern web design trends.
+            </p>
+            <button class="interview border-2 rounded-md px-4">
+              interview
+            </button>
+            <button class="rejected border-2 rounded-md px-4">Rejected</button>
+          </div>
 
-      <!-- Interview section -->
-      <section id="interview-container" class="interview-section hidden"> </section>
+          <!-- card 3 -->
+          <div id="" class="card card3 bg-amber-300 rounded-md p-2">
+            <div class="flex justify-between">
+              <h1 class="font-semibold text-xl">DataViz Solutions</h1>
+              <span class="delete bg-red-400 rounded-full p-2"
+                ><i class="fa-regular fa-trash-can pointer-events-none"></i
+              ></span>
+            </div>
 
-      <!-- Reject section -->
-      <section id="reject-container" class="reject-section hidden"> </section>
+            <p>Data Visualization Specialist</p>
+            <p>Boston, MA • Full-time • $125,000 - $165,000</p>
+            <button class="border-2 rounded-md px-4 status">Not Applied</button>
+            <p>
+              Transform complex data into compelling visualizations. Required
+              skills: D3.js, React, and strong analytical thinking.
+            </p>
+            <button class="interview border-2 rounded-md px-4">
+              interview
+            </button>
+            <button class="rejected border-2 rounded-md px-4">Rejected</button>
+          </div>
 
-       </div>
+          <!-- card 4 -->
+          <div id="" class="card card4 bg-amber-300 rounded-md p-2">
+            <div class="flex justify-between">
+              <h1 class="font-semibold text-xl">CloudFirst Inc</h1>
+              <span class="delete bg-red-400 rounded-full p-2"
+                ><i class="fa-regular fa-trash-can pointer-events-none"></i
+              ></span>
+            </div>
 
-   
+            <p>Backend Developer</p>
+            <p>Seattle, WA • Full-time • $140,000 - $190,000</p>
+            <button class="border-2 rounded-md px-4 status">Not Applied</button>
+            <p>
+              Design and maintain scalable backend systems using Python and AWS.
+              Work with modern DevOps practices and cloud infrastructure.
+            </p>
+            <button class="interview border-2 rounded-md px-4">
+              interview
+            </button>
+            <button class="rejected border-2 rounded-md px-4">Rejected</button>
+          </div>
+
+          <!-- card 5 -->
+          <div id="" class="card card5 bg-amber-300 rounded-md p-2">
+            <div class="flex justify-between">
+              <h1 class="font-semibold text-xl">Innovation Labs</h1>
+              <span class="delete bg-red-400 rounded-full p-2"
+                ><i class="fa-regular fa-trash-can pointer-events-none"></i
+              ></span>
+            </div>
+
+            <p>UI/UX Engineer</p>
+            <p>Austin, TX • Full-time • $110,000 - $150,000</p>
+            <button class="border-2 rounded-md px-4 status">Not Applied</button>
+            <p>
+              Create beautiful and functional user interfaces for our suite of
+              products. Strong design skills and frontend development expertise
+              required.
+            </p>
+            <button class="interview border-2 rounded-md px-4">
+              interview
+            </button>
+            <button class="rejected border-2 rounded-md px-4">Rejected</button>
+          </div>
+
+          <!-- card 6 -->
+          <div id="" class="card card6 bg-amber-300 rounded-md p-2">
+            <div class="flex justify-between">
+              <h1 class="font-semibold text-xl">MegaCorp Solutions</h1>
+              <span class="delete bg-red-400 rounded-full p-2"
+                ><i class="fa-regular fa-trash-can pointer-events-none"></i
+              ></span>
+            </div>
+
+            <p>JavaScript Developer</p>
+            <p>New York, NY • Full-time • $130,000 - $170,00</p>
+            <button class="border-2 rounded-md px-4 status">Not Applied</button>
+            <p>
+              Build enterprise applications with JavaScript and modern
+              frameworks. We offer competitive compensation, health insurance,
+              and professional development opportunities.
+            </p>
+            <button class="interview border-2 rounded-md px-4">
+              interview
+            </button>
+            <button class="rejected border-2 rounded-md px-4">Rejected</button>
+          </div>
+
+          <!-- card 7 -->
+          <div id="" class="card card7 bg-amber-300 rounded-md p-2">
+            <div class="flex justify-between">
+              <h1 class="font-semibold text-xl">StartupXYZ</h1>
+              <span class="delete bg-red-400 rounded-full p-2"
+                ><i class="fa-regular fa-trash-can pointer-events-none"></i
+              ></span>
+            </div>
+
+            <p>Full Stack Engineer</p>
+            <p>Remote• Full-time •$120,000 - $160,000</p>
+            <button class="border-2 rounded-md px-4 status">Not Applied</button>
+            <p>
+              Join our fast-growing startup and work on our core platform.
+              Experience with Node.js and React required. Great benefits and
+              equity package included.
+            </p>
+            <button class="interview border-2 rounded-md px-4">
+              interview
+            </button>
+            <button class="rejected border-2 rounded-md px-4">Rejected</button>
+          </div>
+
+          <!-- card 8 -->
+               <div id="" class="card card8 bg-amber-300 rounded-md p-2">
+            <div class="flex justify-between">
+              <h1 class="font-semibold text-xl">TechCorp Industries</h1>
+              <span class="delete bg-red-400 rounded-full p-2"
+                ><i class="fa-regular fa-trash-can pointer-events-none"></i
+              ></span>
+            </div>
+
+            <p>Senior Frontend Developer</p>
+            <p>San Francisco, CA • Full-time • $130,000 - $175,000</p>
+            <button class="border-2 rounded-md px-4 status">Not Applied</button>
+            <p>
+              We are looking for an experienced Frontend Developer to build scalable web applications using React and TypeScript. You will work with a talented team on cutting-edge projects.
+            </p>
+            <button class="interview border-2 rounded-md px-4">
+              interview
+            </button>
+            <button class="rejected border-2 rounded-md px-4">Rejected</button>
+          </div>
+        </section>
+
+        <!-- Interview section -->
+        <section
+          id="interview-container"
+          class="interview-section hidden"
+        ></section>
+
+        <!-- Reject section -->
+        <section id="reject-container" class="reject-section hidden"></section>
+      </div>
 
       <!-- empty section -->
       <section id="empty-state" class="empty-section hidden">
