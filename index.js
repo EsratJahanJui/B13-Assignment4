@@ -5,6 +5,8 @@
  const allContainer = document.getElementById("all-container");
  const interviewContainer = document.getElementById("interview-container");
  const rejectContainer = document.getElementById("reject-container");
+ const emptyState = document.getElementById("empty-state");
+  
 //  console.log(allContainer, interviewContainer, rejectContainer);
  function switchTab(tab){
      
@@ -28,12 +30,16 @@
       section.classList.add("hidden");
     }
 
+    emptyState.classList.add("hidden");
+
 
     if(tab === "all"){
       // interviewContainer.classList.add("hidden");
       // rejectContainer.classList.add("hidden"); 
 
       allContainer.classList.remove("hidden");
+      if(allContainer.children.length < 1){
+          emptyState.classList.remove("hidden"); }
       
 
 
@@ -43,6 +49,8 @@
       // rejectContainer.classList.add("hidden");
 
       interviewContainer.classList.remove("hidden");
+        if(interviewContainer.children.length < 1){
+          emptyState.classList.remove("hidden"); }
 
 
 
@@ -51,6 +59,8 @@
       // interviewContainer.classList.add("hidden");
 
       rejectContainer.classList.remove("hidden");
+        if(rejectContainer.children.length < 1){
+          emptyState.classList.remove("hidden"); }
     }
 
 
@@ -96,9 +106,22 @@ document.getElementById("jobs-container").addEventListener("click", function(eve
 
 // update stat 
 function updateStat(){
-  totalStat.innerText = allContainer.children.length;
-  interviewStat.innerText = interviewContainer.children.length;
-  rejectStat.innerText = rejectContainer.children.length;
+//   totalStat.innerText = allContainer.children.length;
+//   interviewStat.innerText = interviewContainer.children.length;
+//  = rejectContainer.children.length;
+  const counts = {
+    all: allContainer.children.length,
+    interview : interviewContainer.children.length,
+    rejected: rejectContainer.children.length,
+
+
+  }
+      totalStat.innerText = counts["all"],
+      interviewStat.innerText = counts["interview"],
+      rejectStat.innerText = counts ["rejected"]
+
+        rejectStat.innerText
+
 
 
 }
