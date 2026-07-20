@@ -63,7 +63,7 @@ const interviewStat = document.getElementById("stat-interview");
 const rejectStat = document.getElementById("stat-reject");
 
 //  console.log( totalStat, interviewStat, rejectStat);
-totalStat.innerText = allContainer.children.length;
+// totalStat.innerText = allContainer.children.length;
 
  switchTab(currentTab);
 
@@ -79,14 +79,27 @@ document.getElementById("jobs-container").addEventListener("click", function(eve
   if (clickedElement.classList.contains("interview")){
     status.innerText = "interview";
     interviewContainer.appendChild(card);
+    updateStat();
   }
    if (clickedElement.classList.contains("rejected")){
     status.innerText = "rejected";
 
        rejectContainer.appendChild(card);
+       updateStat();
 
   } 
   if (clickedElement.classList.contains("delete")){
     parent.removeChild(card);
+    updateStat();
   }
 })
+
+// update stat 
+function updateStat(){
+  totalStat.innerText = allContainer.children.length;
+  interviewStat.innerText = interviewContainer.children.length;
+  rejectStat.innerText = rejectContainer.children.length;
+
+
+}
+updateStat();
